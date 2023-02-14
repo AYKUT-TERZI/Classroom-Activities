@@ -33,6 +33,7 @@ namespace SifreZorlukDerecesi
                 int sayac1 = 0;
                 int sayac2 = 0;
                 int sayac3 = 0;
+                string specialChars = " !\"#$%&'()*+,-./:;<=>?@[]^_`{|}~";
 
                 for (int i=0; i<txt1.TextLength; i++)
                 {
@@ -47,7 +48,7 @@ namespace SifreZorlukDerecesi
                 {
                     foreach (char c in lbl2.Text)
                     {
-                        if(((int)c >= 32 && (int)c <= 47) || ((int)c >= 58 && (int)c <= 64))
+                        if(speicalChars.Contains(c))
                         {
                             sayac1++;
                         }
