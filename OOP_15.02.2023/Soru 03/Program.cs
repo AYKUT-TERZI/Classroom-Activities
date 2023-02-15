@@ -20,6 +20,8 @@ namespace Soru_03
 
             toplama.Toplam();
 
+            Console.WriteLine(toplama.Sonuc);
+
             Console.ReadKey();
         }
     }

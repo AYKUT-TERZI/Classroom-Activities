@@ -10,7 +10,13 @@ namespace Soru_03
     {
         public int Sayi1 { get; set; }
         public int Sayi2 { get; set; }
-        
+
+        public int Sonuc
+        {
+            get { return Sayi1 + Sayi2; }
+        }
+
+
         public void Toplam()
         {
             Console.WriteLine("Bu iki sayının toplamı: " + (Sayi1 + Sayi2));
